@@ -99,6 +99,7 @@ GameObject:
   - 61: {fileID: 10164891}
   - 114: {fileID: 10164894}
   - 114: {fileID: 10164893}
+  - 81: {fileID: 10164895}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -221,6 +222,13 @@ MonoBehaviour:
   speed: .300000012
   m_gravity: -30
   m_floatGravity: -15
+--- !u!81 &10164895
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 10164887}
+  m_Enabled: 1
 --- !u!1001 &102195076
 Prefab:
   m_ObjectHideFlags: 0

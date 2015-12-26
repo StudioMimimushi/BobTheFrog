@@ -12,6 +12,7 @@ public class SoundManagerScript : MonoBehaviour {
 	public AudioClip land;
 	public AudioClip splash;
 	public AudioClip dead;
+	
 
 	public static SoundManagerScript Instance {
 		get { return soundManagerInstance; }
@@ -35,7 +36,7 @@ public class SoundManagerScript : MonoBehaviour {
 		audioSrc = GetComponentInChildren<AudioSource> ();
 		audioSrc.clip = BGM_main;
 		audioSrc.Play (0);
-
+		audioSrc.ignoreListenerVolume = true;
 	}
 
 	public void changeClip(AudioClip clip)
@@ -61,6 +62,6 @@ public class SoundManagerScript : MonoBehaviour {
 	}
 	public void volumeSFX(float volSFX)
 	{
-		audioSrc.volume = volSFX;
+	 	AudioListener.volume = volSFX;
 	}
 }
