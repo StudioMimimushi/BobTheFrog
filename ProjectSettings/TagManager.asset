@@ -13,6 +13,7 @@ TagManager:
   - BombPickup
   - ExplosionFX
   - GroundCheck
+  - StartGround
   layers:
   - Default
   - TransparentFX
@@ -64,4 +65,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 149272721
+    locked: 0
+  - name: New Layer
+    uniqueID: 1413443449
     locked: 0

@@ -53,4 +53,14 @@ public class SoundManagerScript : MonoBehaviour {
 	{
 		audioSrc.PlayOneShot (clip);
 	}
+	public void volumeBGM(float volBGM)
+	{
+
+		audioSrc.volume = volBGM;
+
+	}
+	public void volumeSFX(float volSFX)
+	{
+		audioSrc.volume = volSFX;
+	}
 }

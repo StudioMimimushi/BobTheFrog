@@ -3,6 +3,8 @@ using System.Collections;
 
 public class TitleSceneScript : MonoBehaviour {
 
+
+
 	// Use this for initialization
 	void Start () {
 	
@@ -17,5 +19,11 @@ public class TitleSceneScript : MonoBehaviour {
 	public void MoveToGameScene() {
 		Debug.Log ("MoveToGameScene");
 		Application.LoadLevel ("GameScene");
+	}
+
+	//Move to options scene
+	public void MoveToOptionsScene() {
+		Debug.Log ("MoveToOptionsScene");
+		Application.LoadLevel ("OptionsScene");
 	}
 }
