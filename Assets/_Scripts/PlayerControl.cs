@@ -73,7 +73,9 @@ public class PlayerControl : MonoBehaviour {
 
 			if(m_Control)
 			{
-				StartCoroutine(m_Control.restartScene());
+				Debug.Log ("returnToScene");
+				Application.LoadLevel("GameOverScene");
+				//StartCoroutine(m_Control.restartScene());
 			}
 		}
 	}

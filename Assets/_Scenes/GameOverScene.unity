@@ -233,7 +233,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 440906816}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 540176147}
+        m_MethodName: returnToTitle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &440906816
@@ -283,7 +294,7 @@ GameObject:
   - 114: {fileID: 496755170}
   - 114: {fileID: 496755172}
   m_Layer: 5
-  m_Name: ScoreText
+  m_Name: FinalScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -394,6 +405,7 @@ GameObject:
   - 223: {fileID: 540176145}
   - 114: {fileID: 540176144}
   - 114: {fileID: 540176143}
+  - 114: {fileID: 540176147}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -479,6 +491,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &540176147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 540176142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8bcd8a14e71f34e9b4484f7fe23faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &749452083
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +702,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1155418204}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 540176147}
+        m_MethodName: retryButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1155418204
@@ -1001,7 +1035,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1821945184}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 540176147}
+        m_MethodName: leaderboardScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1821945184
