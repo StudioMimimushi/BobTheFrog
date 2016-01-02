@@ -15,3 +15,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/OptionsScene.unity
   - enabled: 1
     path: Assets/_Scenes/GameOverScene.unity
+  - enabled: 1
+    path: Assets/_Scenes/LeaderboardScene.unity
+  - enabled: 1
+    path: Assets/_Scenes/CreditScene.unity

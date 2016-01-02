@@ -36,7 +36,7 @@ public class SoundManagerScript : MonoBehaviour {
 		audioSrc = GetComponentInChildren<AudioSource> ();
 		audioSrc.clip = BGM_main;
 		audioSrc.Play (0);
-		audioSrc.ignoreListenerVolume = true;
+		//audioSrc.ignoreListenerVolume = true;
 	}
 
 	public void changeClip(AudioClip clip)
@@ -56,12 +56,8 @@ public class SoundManagerScript : MonoBehaviour {
 	}
 	public void volumeBGM(float volBGM)
 	{
-
 		audioSrc.volume = volBGM;
 
 	}
-	public void volumeSFX(float volSFX)
-	{
-	 	AudioListener.volume = volSFX;
-	}
+
 }

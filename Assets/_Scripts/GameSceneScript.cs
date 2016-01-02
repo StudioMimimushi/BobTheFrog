@@ -5,10 +5,13 @@ using UnityEngine.UI;
 public class GameSceneScript : MonoBehaviour {
 
 	private GameController m_Control;
+	public bool pauseButton;
 
 	// Use this for initialization
 	void Start () {
+		pauseButton = true;
 		m_Control = GameObject.FindGameObjectWithTag ("GameController").GetComponent<GameController> ();
+		LevelManager.setLastLevel(Application.loadedLevelName);
 	}
 	
 	// Update is called once per frame
@@ -35,5 +38,20 @@ public class GameSceneScript : MonoBehaviour {
 			m_Control.setIsGameStarted (true);
 			GameObject.Find("StartText").GetComponent<Text>().enabled = false;
 		}
+	}
+
+	public void menuButton()
+	{
+		if (pauseButton) {
+			Time.timeScale = 0;
+			pauseButton = false;
+		}
+		if (!pauseButton)
+		{
+			Time.timeScale = 1;
+			pauseButton = true;
+		}
+		//Time.timescale = 0.0;
+		
 	}
 }

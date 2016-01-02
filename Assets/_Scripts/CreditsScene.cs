@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
 
-public class LeaderboardScript : MonoBehaviour {
+public class CreditsScene : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +12,6 @@ public class LeaderboardScript : MonoBehaviour {
 	void Update () {
 	
 	}
-
 	public void returnToScene() {
 		LevelManager.changeToPreviousLvl ();
 		

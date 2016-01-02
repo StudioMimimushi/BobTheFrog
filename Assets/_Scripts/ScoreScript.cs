@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour {
 
 	public static int score;
+
 	//public static int lastScoreNumber;
 	//GameObject finalScoreObj;
 	Text currentScore;

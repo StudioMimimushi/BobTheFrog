@@ -6,7 +6,7 @@ public class OptionsSceneScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		LevelManager.setLastLevel(Application.loadedLevelName);
 	}
 	
 	// Update is called once per frame
@@ -15,10 +15,24 @@ public class OptionsSceneScript : MonoBehaviour {
 	}
 
 	public void returnToScene() {
-		Debug.Log ("returnToScene");
-
-			Application.LoadLevel ("TitleScene");
+		Debug.Log ("returnToTitle");		
+		Application.LoadLevel ("TitleScene");
 	
 	}
-	
+
+	public void MoveToCreditScene() {
+		Debug.Log ("MoveToCreditScene");
+		Application.LoadLevel ("CreditScene");
+	}
+
+
+	public void MoveToLeaderScene() {
+		Debug.Log ("MoveToLeaderboardScene");
+		Application.LoadLevel ("LeaderboardScene");
+	}
+
+	public void resetScore(){	
+		PlayerPrefs.DeleteAll ();
+	}
+
 }
