@@ -6,10 +6,6 @@ public class ScoreScript : MonoBehaviour {
 
 	public static int score;
 
-<<<<<<< HEAD
-=======
-	
->>>>>>> origin/master
 	//public static int lastScoreNumber;
 	//GameObject finalScoreObj;
 	Text currentScore;

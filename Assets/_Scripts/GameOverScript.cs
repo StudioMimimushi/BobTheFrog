@@ -6,9 +6,7 @@ public class GameOverScript : MonoBehaviour {
 
 	Text latestScore;
 	void Start () {
-<<<<<<< HEAD
 	LevelManager.setLastLevel(Application.loadedLevelName);
-=======
 	
 		latestScore = GetComponent<Text> ();
 
@@ -25,8 +23,6 @@ public class GameOverScript : MonoBehaviour {
 		if (ScoreScript.score > PlayerPrefs.GetInt("Score3") && ScoreScript.score < PlayerPrefs.GetInt("Score2")){
 			PlayerPrefs.SetInt("Score3", ScoreScript.score);
 		}
-
->>>>>>> origin/master
 	}
 	
 	// Update is called once per frame
@@ -54,15 +50,12 @@ public class GameOverScript : MonoBehaviour {
 		Debug.Log ("leaderboardScene");
 		
 		Application.LoadLevel ("LeaderboardScene");
-<<<<<<< HEAD
 		
 	}
 	public void creditScene() {
 		Debug.Log ("creditScene");
 		
 		Application.LoadLevel ("CreditScene");
-=======
->>>>>>> origin/master
 		
 	}
 }
